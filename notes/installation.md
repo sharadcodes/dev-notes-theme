@@ -5,7 +5,7 @@ tags: ["theme","installation","netlify"]
 ---
 
 
-### Steps for installation
+### Installation
 
 Easiest way is to deploy this theme on netlify. Just **[FORK](https://github.com/sharadcodes/dev-notes-theme)** and deploy this repo using 
 ```
