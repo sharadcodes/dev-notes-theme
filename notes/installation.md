@@ -5,7 +5,7 @@ tags: ["theme","installation","netlify"]
 ---
 
 
-### Steps for installation/deployment
+### Steps for installation
 
 Easiest way is to deploy this theme on netlify. Just **[FORK](https://github.com/sharadcodes/dev-notes-theme)** and deploy this repo using 
 ```
@@ -13,7 +13,7 @@ yarn build
 ```
 for build command and then specify `dist` folder as the root folder, thats it :)
 
-### Changing Name & Image in sidebar
+### Configuration
 
 You can change siteTitle & userImageUrl in `static.config.js` file as
 
