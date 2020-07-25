@@ -322,3 +322,43 @@ code {
 p {
 	margin: 1rem 0;
 }
+
+/* sidenav toggle classes */
+
+#toggler {
+	cursor: pointer;
+	outline: none;
+	-webkit-tap-highlight-color: transparent;
+	z-index: 100 !important;
+	visibility: hidden;
+}
+
+.sidenav-wrapper {
+	transition: 0.3s ease-in-out;
+	z-index: 0 !important;
+}
+
+@media screen and (max-width: 850px) {
+	.sidenav-wrapper {
+		width: 200px;
+	}
+	.nav-item{
+		font-size: 0.8rem;
+	}
+	main {
+		margin-left: -200px;
+		transition: 0.3s ease-in-out;
+	}
+	html {
+		overflow-x: hidden;
+	}
+	.show {
+		margin-left: 0px;
+	}
+	.slide {
+		transform: translateX(200px);
+	}
+	#toggler {
+		visibility: visible;
+	}
+}

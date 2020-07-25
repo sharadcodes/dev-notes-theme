@@ -1,5 +1,5 @@
 import React from 'react'
-import { Root, Routes } from 'react-static'
+import { Root, Routes, Head } from 'react-static'
 //
 import { Router } from 'components/Router'
 
@@ -9,6 +9,9 @@ import SideNav from './components/SideNav'
 function App() {
     return (
         <Root>
+            <Head>
+                <script src="/main.js" defer></script>
+            </Head>
             <main>
                 <SideNav />
                 <div class="content-wrapper">

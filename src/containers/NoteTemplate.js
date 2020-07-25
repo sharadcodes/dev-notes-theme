@@ -3,6 +3,7 @@ import { useRouteData, useSiteData, Head } from 'react-static'
 import Moment from 'react-moment'
 import Markdown from 'react-markdown'
 import { Link } from 'components/Router'
+import Toggler from '../components/Toggler'
 
 export default () => {
     const { note } = useRouteData()
@@ -14,6 +15,7 @@ export default () => {
                 <title>{note.data.title} | {siteTitle}</title>
             </Head>
             <header>
+                <Toggler />
                 <h1>
                     {note.data.title}
                 </h1>
