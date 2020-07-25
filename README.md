@@ -1,2 +1,2 @@
 # dev-notes-theme
-A Dark notes taking theme for Hoomans :)
+A note taking theme for Hoomans :)
