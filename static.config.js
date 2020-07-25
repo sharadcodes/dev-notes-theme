@@ -3,6 +3,11 @@ const klaw = require("klaw");
 const path = require("path");
 const matter = require("gray-matter");
 
+/*
+    PS: Don't change these functions
+    Unless you are ready to hit your head in the wall.
+*/
+
 function getNotes() {
     const items = [];
     // Walk ("klaw") through notes directory and push file paths into items array //
@@ -61,8 +66,18 @@ async function getTags() {
 
 export default {
 
+    /*
+        You can change siteTitle & userImageUrl below :), consider yourself lucky. LOOOOOOOL !!
+    */
     getSiteData: () => ({
-        siteTitle: 'Dev Notes Theme',
+        siteTitle: 'Dev Notes Theme for you by Sharad :)',
+        userImageUrl: 'https://avatars2.githubusercontent.com/u/36638057?s=400&u=0cbe4fd6b5a3655d91b3eb86db834d0829a0c086&v=4',
+
+       
+        /**************************************************************************************************
+            PS: Don't change anything below this comment unless you are ready to hit your head in the wall.
+        ***************************************************************************************************/
+
         tags: tgs
     }),
     getRoutes: async () => {
